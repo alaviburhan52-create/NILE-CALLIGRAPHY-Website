@@ -1,0 +1,148 @@
+/* ===========================================
+   FOOTER
+=========================================== */
+
+footer {
+    background: #111111;
+
+    color: var(--white);
+
+    padding: 70px 0 25px;
+
+    border-top: 1px solid rgba(198, 161, 91, 0.25);
+}
+
+.footer-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 50px;
+}
+
+.footer-container h3 {
+    color: var(--secondary);
+
+    font-family: var(--heading);
+
+    font-size: 28px;
+
+    margin-bottom: 18px;
+}
+
+.footer-container h4 {
+    color: var(--white);
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 20px;
+}
+
+.footer-container p {
+    max-width: 300px;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.footer-container ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.footer-container li {
+    margin-bottom: 12px;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 15px;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+
+    cursor: pointer;
+}
+
+.footer-container li:hover {
+    color: var(--secondary);
+
+    transform: translateX(4px);
+}
+
+footer hr {
+    max-width: 1200px;
+
+    margin: 55px auto 25px;
+
+    border: 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .copyright {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* ===========================================
+   FOOTER MOBILE
+=========================================== */
+
+@media (max-width: 768px) {
+
+    footer {
+        padding: 50px 0 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px 25px;
+    }
+
+    .footer-container > div:first-child {
+        grid-column: 1 / -1;
+    }
+
+    footer hr {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container > div:first-child {
+        grid-column: auto;
+    }
+}

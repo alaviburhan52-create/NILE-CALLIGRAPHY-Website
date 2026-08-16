@@ -1,0 +1,281 @@
+/* ===========================================
+   NILE CALLIGRAPHY — HERO
+=========================================== */
+
+.hero {
+    min-height: 88vh;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("../images/hero.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* ===========================================
+   HERO OVERLAY
+=========================================== */
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10, 10, 10, 0.72) 0%,
+            rgba(10, 10, 10, 0.48) 38%,
+            rgba(10, 10, 10, 0.18) 72%,
+            rgba(10, 10, 10, 0.08) 100%
+        );
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* ===========================================
+   HERO CONTENT
+=========================================== */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 680px;
+
+    max-width: 88%;
+
+    margin-left: 10%;
+
+    color: var(--white);
+}
+
+
+/* ===========================================
+   HERO TAG
+=========================================== */
+
+.hero-tag {
+    display: inline-block;
+
+    color: var(--secondary);
+
+    border: 1px solid rgba(198, 161, 91, 0.7);
+
+    background: rgba(0, 0, 0, 0.18);
+
+    padding: 8px 18px;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 2.5px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    backdrop-filter: blur(5px);
+}
+
+
+/* ===========================================
+   HERO HEADING
+=========================================== */
+
+.hero h2 {
+    font-family: var(--heading);
+
+    font-size: 74px;
+
+    font-weight: 600;
+
+    line-height: 1.02;
+
+    letter-spacing: -0.5px;
+
+    margin-bottom: 25px;
+
+    color: var(--white);
+
+    max-width: 700px;
+}
+
+
+/* ===========================================
+   HERO DESCRIPTION
+=========================================== */
+
+.hero p {
+    font-size: 19px;
+
+    line-height: 1.75;
+
+    max-width: 540px;
+
+    margin-bottom: 38px;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* ===========================================
+   HERO BUTTONS
+=========================================== */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+.hero-buttons .primary-btn {
+    background: var(--secondary);
+
+    color: var(--primary);
+
+    border: 1px solid var(--secondary);
+}
+
+.hero-buttons .primary-btn:hover {
+    background: var(--white);
+
+    color: var(--primary);
+
+    border-color: var(--white);
+}
+
+.hero-buttons .secondary-btn {
+    background: transparent;
+
+    color: var(--white);
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.hero-buttons .secondary-btn:hover {
+    background: var(--white);
+
+    color: var(--primary);
+
+    border-color: var(--white);
+}
+
+
+/* ===========================================
+   TABLET
+=========================================== */
+
+@media (max-width: 900px) {
+
+    .hero-content {
+        margin-left: 7%;
+
+        max-width: 88%;
+    }
+
+    .hero h2 {
+        font-size: 58px;
+    }
+}
+
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 78vh;
+
+        background-position: center;
+    }
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(10, 10, 10, 0.74),
+                rgba(10, 10, 10, 0.40)
+            );
+    }
+
+    .hero-content {
+        max-width: 88%;
+
+        margin-left: 6%;
+    }
+
+    .hero h2 {
+        font-size: 44px;
+
+        line-height: 1.08;
+    }
+
+    .hero p {
+        font-size: 17px;
+
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+}
+
+
+/* ===========================================
+   SMALL PHONES
+=========================================== */
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero h2 {
+        font-size: 37px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-tag {
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+
+        padding: 7px 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,45 @@
+/* ===========================================
+   NILE CALLIGRAPHY — BRAND VARIABLES
+=========================================== */
+
+:root {
+
+    /* Brand Colors */
+
+    --primary: #111111;
+
+    --secondary: #C6A15B;
+
+    --background: #F7F3EB;
+
+    --white: #FFFFFF;
+
+    --text: #242424;
+
+    --muted: #6B675F;
+
+
+    /* Typography */
+
+    --heading: "Cormorant Garamond", serif;
+
+    --body: "Lato", sans-serif;
+
+
+    /* Luxury Design */
+
+    --border: rgba(198, 161, 91, 0.25);
+
+    --shadow-soft:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+
+    --shadow-luxury:
+        0 18px 45px rgba(0, 0, 0, 0.10);
+
+
+    /* Layout */
+
+    --section-padding: 90px 10%;
+
+    --content-width: 1200px;
+}

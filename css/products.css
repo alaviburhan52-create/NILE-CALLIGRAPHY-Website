@@ -1,0 +1,358 @@
+/* ===========================================
+   NILE CALLIGRAPHY — PRODUCTS
+=========================================== */
+
+.products {
+    background: var(--background);
+}
+
+
+/* ===========================================
+   PRODUCT ROW
+=========================================== */
+
+.product-row {
+    display: flex;
+
+    gap: 32px;
+
+    overflow-x: auto;
+
+    padding: 5px 5px 25px;
+
+    scrollbar-width: thin;
+
+    scrollbar-color: var(--secondary) transparent;
+}
+
+
+/* ===========================================
+   PRODUCT CARD
+=========================================== */
+
+.card {
+    flex: 0 0 330px;
+
+    background: var(--white);
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    border-radius: 3px;
+
+    box-shadow: var(--shadow-soft);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: var(--shadow-luxury);
+}
+
+
+/* ===========================================
+   ARTWORK IMAGE
+=========================================== */
+
+.card img {
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    background: #EAE5DB;
+
+    transition:
+        transform 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.025);
+}
+
+
+/* ===========================================
+   CARD CONTENT
+=========================================== */
+
+.card-content {
+    padding: 26px 25px 28px;
+}
+
+.card h3 {
+    font-family: var(--heading);
+
+    font-size: 29px;
+
+    font-weight: 600;
+
+    color: var(--primary);
+
+    margin-bottom: 9px;
+}
+
+.card p {
+    color: var(--muted);
+
+    margin-bottom: 22px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ===========================================
+   PRODUCT BUTTON
+=========================================== */
+
+.card .primary-btn {
+    width: 100%;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    border: 1px solid var(--primary);
+}
+
+.card .primary-btn:hover {
+    background: var(--secondary);
+
+    color: var(--primary);
+
+    border-color: var(--secondary);
+}
+
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+.product-row::-webkit-scrollbar {
+    height: 6px;
+}
+
+.product-row::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.product-row::-webkit-scrollbar-thumb {
+    background: rgba(198, 161, 91, 0.5);
+
+    border-radius: 10px;
+}
+
+.product-row::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}
+
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media (max-width: 768px) {
+
+    .card {
+        flex-basis: 285px;
+    }
+
+    .card img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .card {
+        flex-basis: 270px;
+    }
+
+    .card img {
+        height: 330px;
+    }
+}
+
+/* ===========================================
+   SIGNATURE COLLECTION
+=========================================== */
+
+.signature-collection {
+    background: var(--primary);
+
+    color: var(--white);
+}
+
+.signature-collection .section-header h2 {
+    color: var(--white);
+}
+
+.signature-collection .section-header p {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+
+/* ===========================================
+   SIGNATURE CARD
+=========================================== */
+
+.signature-card {
+    flex: 0 0 390px;
+
+    background: #181818;
+
+    border: 1px solid rgba(198, 161, 91, 0.28);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.signature-card:hover {
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.38);
+}
+
+
+/* ===========================================
+   SIGNATURE IMAGE
+=========================================== */
+
+.signature-image {
+    position: relative;
+
+    width: 100%;
+
+    height: 470px;
+
+    overflow: hidden;
+
+    background: #EAE5DB;
+}
+
+.signature-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.6s ease;
+}
+
+.signature-card:hover .signature-image img {
+    transform: scale(1.025);
+}
+
+
+/* ===========================================
+   SIGNATURE BADGE
+=========================================== */
+
+.signature-badge {
+    position: absolute;
+
+    top: 18px;
+
+    right: 18px;
+
+    padding: 8px 13px;
+
+    background: rgba(17, 17, 17, 0.88);
+
+    color: var(--secondary);
+
+    border: 1px solid rgba(198, 161, 91, 0.55);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.8px;
+}
+
+
+/* ===========================================
+   SIGNATURE CONTENT
+=========================================== */
+
+.signature-card .card-content {
+    padding: 28px 27px 30px;
+}
+
+.signature-card .gallery-card-tag {
+    color: var(--secondary);
+}
+
+.signature-card h3 {
+    color: var(--white);
+
+    font-size: 32px;
+
+    margin-bottom: 12px;
+}
+
+.signature-card p {
+    color: rgba(255, 255, 255, 0.68);
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    margin-bottom: 24px;
+}
+
+.signature-card .primary-btn {
+    background: var(--secondary);
+
+    color: var(--primary);
+
+    border-color: var(--secondary);
+}
+
+.signature-card .primary-btn:hover {
+    background: var(--white);
+
+    color: var(--primary);
+
+    border-color: var(--white);
+}
+
+
+/* ===========================================
+   SIGNATURE MOBILE
+=========================================== */
+
+@media (max-width: 768px) {
+
+    .signature-card {
+        flex-basis: 320px;
+    }
+
+    .signature-image {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .signature-card {
+        flex-basis: 285px;
+    }
+
+    .signature-image {
+        height: 350px;
+    }
+}
